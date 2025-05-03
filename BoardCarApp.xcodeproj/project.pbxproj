@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9BC718362DC61B2C0081F71E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC718352DC61B2C0081F71E /* SnapKit */; };
+		9BC718DF2DC6464A0081F71E /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC718DE2DC6464A0081F71E /* NMapsMap */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC718362DC61B2C0081F71E /* SnapKit in Frameworks */,
+				9BC718DF2DC6464A0081F71E /* NMapsMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			name = BoardCarApp;
 			packageProductDependencies = (
 				9BC718352DC61B2C0081F71E /* SnapKit */,
+				9BC718DE2DC6464A0081F71E /* NMapsMap */,
 			);
 			productName = BoardCarApp;
 			productReference = 9BC717F82DC6188C0081F71E /* BoardCarApp.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9BC718342DC61B2C0081F71E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				9BC718DD2DC6464A0081F71E /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC717F92DC6188C0081F71E /* Products */;
@@ -160,6 +164,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -186,6 +191,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -201,6 +207,8 @@
 		};
 		9BC7180E2DC6188E0081F71E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 9BC717FA2DC6188C0081F71E /* BoardCarApp */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -350,6 +358,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		9BC718DD2DC6464A0081F71E /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/navermaps/SPM-NMapsMap";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.21.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -357,6 +373,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9BC718342DC61B2C0081F71E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		9BC718DE2DC6464A0081F71E /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC718DD2DC6464A0081F71E /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */;
+			productName = NMapsMap;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

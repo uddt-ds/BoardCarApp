@@ -13,7 +13,7 @@ class LoginView: UIView {
 
     let logoImage: UIImageView = {
         let logoImage = UIImageView()
-        logoImage.image = UIImage(named: "LogoImage")
+        logoImage.image = UIImage(named: "logoImage")
         logoImage.contentMode = .scaleAspectFit
         return logoImage
     }()
@@ -53,7 +53,6 @@ class LoginView: UIView {
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         btn.backgroundColor = .purple
         btn.layer.cornerRadius = 13
-//        btn.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
         return btn
     }()
 
@@ -68,7 +67,7 @@ class LoginView: UIView {
 
     let coinImage: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "CoinImage")
+        image.image = UIImage(named: "coinImage")
         image.contentMode = .scaleAspectFit
         return image
     }()

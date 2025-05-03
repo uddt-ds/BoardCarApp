@@ -18,10 +18,26 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        pushRegisterView()
+        pushTabBarController()
+        navigationController?.navigationBar.isHidden = true
+    }
+
+    private func pushRegisterView() {
         loginView.registerButton.addTarget(self, action: #selector(registerBtnTapped), for: .touchUpInside)
     }
 
     @objc func registerBtnTapped() {
         navigationController?.pushViewController(SignUpVC(), animated: true)
+    }
+
+    private func pushTabBarController() {
+        loginView.loginBtn.addTarget(self, action: #selector(loginBtnTapped), for: .touchUpInside)
+    }
+
+    @objc func loginBtnTapped() {
+        print("버튼 클릭")
+        let tabBarController = TabBarController()
+        navigationController?.pushViewController(tabBarController, animated: true)
     }
 }
