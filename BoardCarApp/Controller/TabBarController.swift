@@ -33,5 +33,4 @@ class TabBarController: UITabBarController {
         tabBar.tintColor = .purple
         tabBar.backgroundColor = .white
     }
-
 }
